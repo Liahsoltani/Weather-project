@@ -1,2 +1,2 @@
 # Weather-project
-Weather project foe Eliq company.
+This is a sample weather project for Eliq company.
