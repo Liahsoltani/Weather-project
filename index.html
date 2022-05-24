@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Weather APP</title>
+	<link rel="icon" href="./icons/weather.svg" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-oTRqJXbH8qOKx8Vvy0BEfUMVKE30Rlc&libraries=places&callback=initMap" async defer></script>
+	
+	
+  </head>
+  <body>
+    <div class="card">
+		<div id="loaderIcon">
+			<img src="images/loader.gif">
+		</div>
+
+      <div class="location">
+        <h1 class="timezone"></h1>
+        <h2 class="city"></h2>
+      </div>
+      <div class="temperature">
+        <div class="degree-section centigrade">
+          <h2 class="degree"></h2>
+          <div class="feelsLike"></div>
+        </div>
+		<div class="degree-section fahrenheit">
+          <h2 class="degree"></h2>
+		  <div class="feelsLike"></div>
+        </div>
+        <div class="flex">
+          <div class="icon"></div>
+          <div class="temperature-description"></div>
+        </div>
+		
+      </div>
+		<div id="gpsButton">
+			Get my position with GPS
+		</div>
+		<br><br>
+		<div id="embeddedMap"></div>
+    </div>
+
+    
+	<script src="app.js"></script>
+	
+  </body>
+</html>

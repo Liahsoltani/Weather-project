@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #222;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("https://source.unsplash.com/random/?landscape");
+}
+.card {
+  margin:10px 0;
+  background-color: #ffffffd0;
+  padding: 2em;
+  border-radius: 35px;
+  width: 95%;
+  max-width: 420px;
+  color: #0000009e;
+}
+#loaderIcon {
+	margin-bottom:10px;
+	text-align:center;
+}
+#loaderIcon img{
+	width:20px;
+}
+
+.icon img {
+  height: 120px;
+  width: 120px;
+}
+
+.location,
+.temperature {
+  margin-bottom:20px;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.temperature {
+  flex-direction: column;
+}
+
+.temperature-description {
+  font-size: 1em;
+  text-transform: capitalize;
+  width: 100px;
+}
+
+.degree-section {
+  display: block;
+  align-items: center;
+  cursor: pointer;
+}
+
+.degree-section span {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.degree-section h2 {
+  font-size: 40px;
+  display:inline;
+}
+.fahrenheit{
+	display:none;
+}
+.feelsLike{
+	font-size:1.2em;
+	margin-top:10px;
+}
+
+.icon {
+  display: inline-block;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+#embeddedMap{
+	width:100%;
+	height:400px;
+}
+
+#gpsButton {
+  background-color: #e1ecf4;
+  border-radius: 17px;
+  border: 1px solid #7aa7c7;
+  color: #254963;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 8px 10px;
+  white-space: nowrap;
+}
